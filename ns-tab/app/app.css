@@ -1,0 +1,35 @@
+.tab-content {
+    vertical-align: center;
+    color: #808080;
+    font-size: 24;
+    padding: 20;
+}
+
+.title {
+    margin: 0 0 10 0;
+    font-size: 32;
+    color: #3c3c3c;
+}
+
+Page {
+    background-color: #FFFFFF;
+}
+
+.spaceBottom {
+    margin: 0 0 20 0;
+}
+
+.spaceTop {
+    margin: 20 0 0 0;
+}
+
+.spaceSides {
+    margin: 0 20 0 20;
+}
+
+.listItem {
+    margin: 10;
+    horizontal-align: center;
+    color: #808080;
+    font-size: 20;
+}

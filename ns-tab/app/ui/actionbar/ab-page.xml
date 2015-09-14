@@ -1,0 +1,19 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <Page.actionBar>
+    <ActionBar>
+      <ActionBar.actionItems>
+        <!-- The below buttons will exist under the popup menu. -->
+        <ActionItem text="First" ios.position="right" android.position="popup"/>
+        <ActionItem text="Second" ios.position="right" android.position="popup"/>
+        <!-- The below button shows up all the time because we haven't relegated it to popup. 
+              Also ties to common tap event on model. -->
+        <ActionItem text="Action" tap="buttonTap"/>
+      </ActionBar.actionItems>
+    </ActionBar>
+  </Page.actionBar>
+  <StackLayout>
+    <Label text="Just some text."/>
+    <!-- Not sure how to best use this widget yet, need to think up creative uses since it basically dominates UI. -->
+    <!--<DatePicker  />-->
+  </StackLayout>
+</Page>

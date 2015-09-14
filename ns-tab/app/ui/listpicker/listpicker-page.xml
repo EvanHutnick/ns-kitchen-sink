@@ -1,0 +1,11 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <StackLayout cssClass="spaceSides">
+    <Label text="Below is a ListPicker widget for selecting items."/>
+    <Button tap="pickFour" text="Select Fourth Item"/>
+    <ListPicker items="{{ listItems }}" selectedIndex="{{ selectedIndex }}" />
+    <!--
+    To-do:
+    <Label text="Selected Item:"/>
+    <Label text=""/>-->
+  </StackLayout>
+</Page>

@@ -1,0 +1,9 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <StackLayout>
+    <ActivityIndicator busy="{{ isBusy }}"/>
+    <Button tap="buttonTap" text="One"/>
+    <Border borderWidth="5" borderRadius="10" borderColor="Chartreuse">
+      <Button tap="buttonTap2" text="{{ text2 }}"/>
+    </Border>
+  </StackLayout>
+</Page>

@@ -1,0 +1,28 @@
+{
+  "ProjectName": "ns_tab",
+  "ProjectGuid": "14dbb3a2-f526-4eba-92ce-8c5d2a3f66f9",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.nstab",
+  "DisplayName": "ns_tab",
+  "Author": "",
+  "Description": "ns_tab",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{F0A65104-D4F4-4012-B799-F612D75820F6}",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "FrameworkVersion": "1.2.3",
+  "Framework": "NativeScript"
+}

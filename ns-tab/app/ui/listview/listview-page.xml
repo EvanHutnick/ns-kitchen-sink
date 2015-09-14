@@ -1,0 +1,12 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <GridLayout cssClass="spaceSides" rows="auto,auto,auto,*">
+    <Label text="Below is a ListView widget for selecting items, takes more space than ListPicker." textWrap="true" row="0" />
+    <Label text="Selected item details:" row="1" />
+    <Label text="{{ selectedDetails }}" row="2" textWrap="true"/>
+    <ListView items="{{ listItems }}" itemTap="listItemTap" row="3">
+      <ListView.itemTemplate>
+        <Label text="{{ title }}" cssClass="listItem"/>
+      </ListView.itemTemplate>
+    </ListView>
+  </GridLayout>
+</Page>

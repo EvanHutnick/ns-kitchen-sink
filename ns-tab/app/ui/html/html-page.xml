@@ -1,0 +1,10 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <GridLayout rows="auto, auto, *" cssClass="spaceSides">
+    <StackLayout orientation="vertical" row="0">
+      <Label text="Enter HTML string: "/>
+      <TextField editable="true" hint="Enter some html code..." text="{{ newHtml }}" />
+    </StackLayout>
+    <Button text="Convert" tap="convertTap" row="1"/>
+    <HtmlView html="{{ html }}" row="2"/>
+  </GridLayout>
+</Page>
