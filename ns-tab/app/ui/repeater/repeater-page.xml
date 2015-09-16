@@ -1,0 +1,61 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <ScrollView>
+    <StackLayout cssClass="spaceSides">
+      <Label text="Repeater with WrapLayout and no defined size:"/>
+      <Repeater items="{{ repeaterItems }}" cssClass="spaceBottom">
+        <Repeater.itemsLayout>
+          <WrapLayout />
+        </Repeater.itemsLayout>
+        <Repeater.itemTemplate>
+          <Label text="{{ $value }}" margin="10" />
+        </Repeater.itemTemplate>
+      </Repeater>
+
+      <Label text="Repeater with WrapLayout and defined size for items:"/>
+      <Repeater items="{{ repeaterItems }}" cssClass="spaceBottom">
+        <Repeater.itemsLayout>
+          <WrapLayout />
+        </Repeater.itemsLayout>
+        <Repeater.itemTemplate>
+          <Label text="{{ $value }}" width="100" margin="10" />
+        </Repeater.itemTemplate>
+      </Repeater>
+
+      <Label text="Same, but with a border to make them more defined and a height:" textWrap="true"/>
+      <Repeater items="{{ repeaterItems }}" cssClass="spaceBottom">
+        <Repeater.itemsLayout>
+          <WrapLayout  />
+        </Repeater.itemsLayout>
+        <Repeater.itemTemplate>
+          <Border borderColor="#A80000" borderWidth="2" margin="4" width="90" height="90">
+            <Label text="{{ $value }}" horizontalAlignment="center" verticalAlignment="center" />
+          </Border>
+        </Repeater.itemTemplate>
+      </Repeater>
+
+      <Label text="One more time, but now with a button so you can interact with elements:" textWrap="true"/>
+      <Repeater items="{{ repeaterItems }}" cssClass="spaceBottom">
+        <Repeater.itemsLayout>
+          <WrapLayout  />
+        </Repeater.itemsLayout>
+        <Repeater.itemTemplate>
+          <Border borderColor="#A80000" borderWidth="2" margin="4" width="90" height="90">
+              <Button text="{{ $value }}" tap="buttonTap" horizontalAlignment="stretch" verticalAlignment="stretch" borderWidth="0" />
+          </Border>
+        </Repeater.itemTemplate>
+      </Repeater>
+
+      <Label text="One more time, but now with a button so you can interact with elements:" textWrap="true"/>
+      <Repeater items="{{ repeaterObjectItems }}" cssClass="spaceBottom">
+        <Repeater.itemsLayout>
+          <WrapLayout  />
+        </Repeater.itemsLayout>
+        <Repeater.itemTemplate>
+          <Border borderColor="#A80000" borderWidth="2" color="Transparent" margin="4" width="90" height="90">
+            <Button text="{{ title }}" tap="objectButtonTap" horizontalAlignment="stretch" verticalAlignment="stretch" borderWidth="0" />
+          </Border>
+        </Repeater.itemTemplate>
+      </Repeater>
+    </StackLayout>
+  </ScrollView>
+</Page>

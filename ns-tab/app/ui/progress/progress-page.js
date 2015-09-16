@@ -23,11 +23,11 @@ function startProgress(args) {
         console.log("new: " + nV + ", max: " + mV);
         if (Number(nV) >= Number(mV)) {
             console.log(">=!!!");
-            timer.clearInterval(t);
+            timer.clearInterval(t);     // this doesn't work
         } else {
             vm.progressViewModel.set("currentValue", nV);
         }
     }, 500);
-    //vm.progressViewModel.set("currentValue", 5); // zero-based index, so fourth = 3
+
 }
 exports.startProgress = startProgress;

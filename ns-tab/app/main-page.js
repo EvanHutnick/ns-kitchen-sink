@@ -8,10 +8,10 @@ function pageLoaded(args) {
 }
 exports.pageLoaded = pageLoaded;
 
-function tabTap(args) {
+function buttonTap(args) {
     frames.topmost().navigate("./ui/buttons/test-page");
 }
-exports.tabTap = tabTap;
+exports.buttonTap = buttonTap;
 
 function actionBarTap(args) {
     frames.topmost().navigate("./ui/actionbar/ab-page");
@@ -47,3 +47,8 @@ function progressTap(args) {
     frames.topmost().navigate("./ui/progress/progress-page");
 }
 exports.progressTap = progressTap;
+
+function repeaterTap(args) {
+    frames.topmost().navigate("./ui/repeater/repeater-page");
+}
+exports.repeaterTap = repeaterTap;

@@ -1,13 +1,12 @@
 <Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
   <TabView>
     <TabView.items>
-      <TabViewItem title="First">
+      <TabViewItem title="Widgets">
         <TabViewItem.view>
           <ScrollView>
             <StackLayout cssClass="tab-content">
-              <Label text="First View" cssClass="title"/>
-              <Label text="This is the content of the first tab." textWrap="true"/>
-              <Button tap="tabTap" text="Button Test" />
+              <Label text="Here you can browse through different widgets to see what type of functionality they have and examples of interacting with them." textWrap="true"/>
+              <Button tap="buttonTap" text="Button Test" />
               <Button tap="actionBarTap" text="Action Bar Test"/>
               <Button tap="dialogsTap" text="Dialogs Test"/>
               <Button tap="htmlTap" text="HTML Test"/>
@@ -15,15 +14,15 @@
               <Button tap="listpickerTap" text="List Picker Test"/>
               <Button tap="listviewTap" text="List View Test"/>
               <Button tap="progressTap" text="Progress Test"/>
+              <Button tap="repeaterTap" text="Repeater Test"/>
             </StackLayout>
           </ScrollView>
         </TabViewItem.view>
       </TabViewItem>
-      <TabViewItem title="Second">
+      <TabViewItem title="Framework">
         <TabViewItem.view>
           <StackLayout cssClass="tab-content">
-            <Label text="Second View" cssClass="title"/>
-            <Label text="This is the content of the second tab." textWrap="true"/>
+            <Label text="Here you see more framework-related functionality, like data access, for example." textWrap="true"/>
           </StackLayout>
         </TabViewItem.view>
       </TabViewItem>

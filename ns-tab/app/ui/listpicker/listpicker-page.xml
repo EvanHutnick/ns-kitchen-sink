@@ -3,9 +3,5 @@
     <Label text="Below is a ListPicker widget for selecting items."/>
     <Button tap="pickFour" text="Select Fourth Item"/>
     <ListPicker items="{{ listItems }}" selectedIndex="{{ selectedIndex }}" />
-    <!--
-    To-do:
-    <Label text="Selected Item:"/>
-    <Label text=""/>-->
   </StackLayout>
 </Page>
