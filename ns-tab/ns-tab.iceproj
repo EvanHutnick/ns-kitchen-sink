@@ -45,6 +45,9 @@
     <Content Include="app\ui\listview\listview-page-vm.js" />
     <Content Include="app\ui\listview\listview-page.js" />
     <Content Include="app\ui\listview\listview-page.xml" />
+    <Content Include="app\ui\progress\progress-page-vm.js" />
+    <Content Include="app\ui\progress\progress-page.js" />
+    <Content Include="app\ui\progress\progress-page.xml" />
     <Content Include="package.json" />
     <Content Include="app\app.css" />
     <Content Include="app\app.js" />
@@ -419,6 +422,7 @@
     <Folder Include="app\ui\image\" />
     <Folder Include="app\ui\listpicker\" />
     <Folder Include="app\ui\listview\" />
+    <Folder Include="app\ui\progress\" />
   </ItemGroup>
   <Import Project="$(IceniumTargets)Build.targets" />
   <!--

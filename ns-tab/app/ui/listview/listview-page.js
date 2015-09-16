@@ -16,3 +16,15 @@ function listItemTap(args) {
     vm.listviewViewModel.set("selectedDetails", args.view.bindingContext.detail);
 }
 exports.listItemTap = listItemTap;
+
+// Call the addItem function on the viewModel, since we have ObservableArray it auto-magically shows up in view.
+function addListItem(args) {
+    vm.addItem("New Item", "With some new details, too!");
+}
+exports.addListItem = addListItem;
+
+// Normally you use this for loading more items from remote source, etc.  Try flicking up fast, it'll keep scrolling and scrolling. :)
+function loadMoreItems(args) {
+    vm.createItems();
+}
+exports.loadMoreItems = loadMoreItems;

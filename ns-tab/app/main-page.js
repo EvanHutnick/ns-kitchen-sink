@@ -42,3 +42,8 @@ function listviewTap(args) {
     frames.topmost().navigate("./ui/listview/listview-page");
 }
 exports.listviewTap = listviewTap;
+
+function progressTap(args) {
+    frames.topmost().navigate("./ui/progress/progress-page");
+}
+exports.progressTap = progressTap;

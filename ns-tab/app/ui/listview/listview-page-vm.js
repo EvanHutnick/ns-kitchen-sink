@@ -10,11 +10,30 @@ var VmItem = (function () {
 })();
 
 var items = [];
-items.push(new VmItem("First", "This is the first item."));
-items.push(new VmItem("Second", "This is the second item.  But the better one."));
-items.push(new VmItem("Third", "This is the third and best item."));
+for (var i = 0; i < 10; i++) {
+    items.push(new VmItem("Title " + i, "This title "))
+}
 
 var lItems = new observableArray.ObservableArray(items);
+
+// add one item to array
+var addItem = function (title, detail) {
+    var aL = lItems.length + 1;
+    var nT = title + " " + aL;
+    lItems.push(new VmItem(nT, detail));
+}
+exports.addItem = addItem;
+
+// hooked to loadMoreItems event on ListView, generates items when last list item is visible.
+var createItems = function () {
+    var aL = lItems.length;
+    var cT = aL + 5;
+
+    for (var aL; aL < cT; aL++) {
+        lItems.push(new VmItem("Load More Items #" + aL, "Some item details for " + aL));
+    }
+}
+exports.createItems = createItems;
 
 exports.listviewViewModel = new observable.Observable();
 exports.listviewViewModel.set("listItems", lItems);

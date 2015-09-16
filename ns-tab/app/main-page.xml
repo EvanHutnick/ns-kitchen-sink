@@ -3,17 +3,20 @@
     <TabView.items>
       <TabViewItem title="First">
         <TabViewItem.view>
-          <StackLayout cssClass="tab-content">
-            <Label text="First View" cssClass="title"/>
-            <Label text="This is the content of the first tab." textWrap="true"/>
-            <Button tap="tabTap" text="Button Test" />
-            <Button tap="actionBarTap" text="Action Bar Test"/>
-            <Button tap="dialogsTap" text="Dialogs Test"/>
-            <Button tap="htmlTap" text="HTML Test"/>
-            <Button tap="imageTap" text="Image Test"/>
-            <Button tap="listpickerTap" text="List Picker Test"/>
-            <Button tap="listviewTap" text="List View Test"/>
-          </StackLayout>
+          <ScrollView>
+            <StackLayout cssClass="tab-content">
+              <Label text="First View" cssClass="title"/>
+              <Label text="This is the content of the first tab." textWrap="true"/>
+              <Button tap="tabTap" text="Button Test" />
+              <Button tap="actionBarTap" text="Action Bar Test"/>
+              <Button tap="dialogsTap" text="Dialogs Test"/>
+              <Button tap="htmlTap" text="HTML Test"/>
+              <Button tap="imageTap" text="Image Test"/>
+              <Button tap="listpickerTap" text="List Picker Test"/>
+              <Button tap="listviewTap" text="List View Test"/>
+              <Button tap="progressTap" text="Progress Test"/>
+            </StackLayout>
+          </ScrollView>
         </TabViewItem.view>
       </TabViewItem>
       <TabViewItem title="Second">

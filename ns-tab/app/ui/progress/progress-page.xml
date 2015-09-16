@@ -1,0 +1,9 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <StackLayout cssClass="spaceSides">
+    <Label text="Click on the button below to start a timer that controls the Progress component." textWrap="true" />
+    <Button tap="startProgress" text="Go!"/>
+
+    <Progress maxValue="{{ maxValue }}" value="{{ currentValue }}" />
+
+  </StackLayout>
+</Page>
