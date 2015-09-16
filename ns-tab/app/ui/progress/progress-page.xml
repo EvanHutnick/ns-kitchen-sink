@@ -1,9 +1,18 @@
 <Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
-  <StackLayout cssClass="spaceSides">
-    <Label text="Click on the button below to start a timer that controls the Progress component." textWrap="true" />
-    <Button tap="startProgress" text="Go!"/>
+  <StackLayout cssClass="demo-page-content">
+    <Label text="The Slider and Progress widgets below are bound to the same value, so changing the Slider will show the same value represented in the Progress indicator. " textWrap="true" cssClass="spaceBottom" />
 
-    <Progress maxValue="{{ maxValue }}" value="{{ currentValue }}" />
+    <StackLayout orientation="horizontal" cssClass="spaceBottom">
+      <Label text="Current Value: "/>
+      <Label text="{{ currentValue }}"/>
+    </StackLayout>
+    
+    <Progress maxValue="{{ maxValue }}" value="{{ currentValue }}" cssClass="spaceBottom"/>
 
+    <Slider maxValue="{{ maxValue }}" value="{{ currentValue }}" minValue="0"/>
+    
   </StackLayout>
 </Page>
+
+<!--<Label text="Click on the button below to start a timer that controls the Progress component." textWrap="true" />-->
+<!--<Button tap="startProgress" text="Go!"/>-->

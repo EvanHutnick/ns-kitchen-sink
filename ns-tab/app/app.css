@@ -1,8 +1,13 @@
 .tab-content {
     vertical-align: center;
     color: #808080;
-    font-size: 24;
-    padding: 20;
+    font-size: 16;
+    padding: 16;
+}
+
+.demo-page-content {
+    font-size: 16;
+    padding: 16;
 }
 
 .title {

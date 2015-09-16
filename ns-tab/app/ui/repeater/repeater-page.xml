@@ -10,7 +10,7 @@
           <Label text="{{ $value }}" margin="10" />
         </Repeater.itemTemplate>
       </Repeater>
-
+      
       <Label text="Repeater with WrapLayout and defined size for items:"/>
       <Repeater items="{{ repeaterItems }}" cssClass="spaceBottom">
         <Repeater.itemsLayout>

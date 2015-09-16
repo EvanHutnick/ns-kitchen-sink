@@ -33,6 +33,11 @@ function imageTap(args) {
 }
 exports.imageTap = imageTap;
 
+function inputsTap(args) {
+    frames.topmost().navigate("./ui/inputs/inputs-page");
+}
+exports.inputsTap = inputsTap;
+
 function listpickerTap(args) {
     frames.topmost().navigate("./ui/listpicker/listpicker-page");
 }

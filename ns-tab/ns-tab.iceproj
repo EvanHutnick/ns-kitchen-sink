@@ -39,6 +39,9 @@
     <Content Include="app\ui\html\html-page.xml" />
     <Content Include="app\ui\image\image-page.js" />
     <Content Include="app\ui\image\image-page.xml" />
+    <Content Include="app\ui\inputs\inputs-page-vm.js" />
+    <Content Include="app\ui\inputs\inputs-page.js" />
+    <Content Include="app\ui\inputs\inputs-page.xml" />
     <Content Include="app\ui\listpicker\listpicker-page-vm.js" />
     <Content Include="app\ui\listpicker\listpicker-page.js" />
     <Content Include="app\ui\listpicker\listpicker-page.xml" />
@@ -425,6 +428,7 @@
     <Folder Include="app\ui\image\" />
     <Folder Include="app\ui\listpicker\" />
     <Folder Include="app\ui\listview\" />
+    <Folder Include="app\ui\inputs\" />
     <Folder Include="app\ui\repeater\" />
     <Folder Include="app\ui\progress\" />
   </ItemGroup>

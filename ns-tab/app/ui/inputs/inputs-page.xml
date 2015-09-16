@@ -1,0 +1,19 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <ScrollView>
+    <StackLayout cssClass="demo-page-content">
+      <Label text="Exploring different input controls available within {NS}."/>
+      <Label text="Text Field" cssClass="spaceTop" />
+      <TextField text="{{ boundText }}"/>
+      <Label text="Text View" cssClass="spaceTop"/>
+      <TextView text="{{ boundLongText }}"/>
+      <StackLayout cssClass="spaceTop">
+        <Label text="Switch"/>
+        <Switch checked="{{ switchValue }}" horizontalAlignment="right"/>
+      </StackLayout>
+      <StackLayout orientation="horizontal">
+        <Label text="Switch value:"/>
+        <Label text="{{ switchValue }}"/>
+      </StackLayout>
+    </StackLayout>
+  </ScrollView>
+</Page>
