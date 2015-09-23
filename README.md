@@ -11,11 +11,11 @@ If you're a command-line type person...
 1. Ensure you have [NativeScript Command-line Interface](https://www.npmjs.com/package/nativescript) and (grunt-cli)[https://github.com/gruntjs/grunt-cli] installed as well as all the prerequisites for the NativeScript development.
 
 2. Clone and install dependencies for this sample:
-```
-git clone https://github.com/EvanHutnick/ns-kitchen-sink.git
-cd ns-kitchen-sink
-tns install
-```
+  ```
+  git clone https://github.com/EvanHutnick/ns-kitchen-sink.git
+  cd ns-kitchen-sink
+  tns install
+  ```
 
 3. Copy platform specific resources
   
@@ -26,5 +26,5 @@ tns install
   cp -R install/android platforms/
   cp -R install/ios platforms/
   ```
-  
-  You're all set to go!  
+
+You're all set to go!  
