@@ -1,0 +1,12 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <StackLayout cssClass="demo-page-content">
+    <Label text="The following three widgets are all bound to the same isBusy value, however StartIndicator uses !isBusy to toggle enabled to the opposite value of whether the ActivityIndicator is on or not.  Sneaky!" textWrap="true" cssClass="spaceBottom"/>
+    <ActivityIndicator busy="{{ isBusy }}" cssClass="spaceBottom"/>
+    <GridLayout columns="*,*" rows="auto">
+      <Button tap="indicatorToggle" text="Start Indicator" isEnabled="{{ !isBusy }}" col="0" />
+      <Button tap="indicatorToggle" text="Stop Indicator" isEnabled="{{ isBusy }}" col="1" />
+    </GridLayout>
+    <Label text="The following button has text bound to a VM value, so we can update it and have it reflected in the button." textWrap="true" cssClass="spaceTop" />
+    <Button tap="modifyButton" text="{{ buttonText }}" />
+  </StackLayout>
+</Page>

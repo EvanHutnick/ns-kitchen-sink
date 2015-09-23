@@ -1,8 +1,8 @@
 <Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
-  <StackLayout cssClass="spaceSides">
-    <Label text="Local image (in /app)" cssClass="spaceTop"/>
-    <Image src="~/server_room_small.jpg"/>
+  <StackLayout cssClass="demo-page-content">
+    <Label text="Local image (in /app/imags)"/>
+    <Image src="~/images/server_room_small.jpg" cssClass="spaceTop"/>
     <Label text="Remote image from web" cssClass="spaceTop"/>
-    <Image src="http://ekator.com/ekator.png"/>
+    <Image src="http://ekator.com/ekator.png" cssClass="spaceTop"/>
   </StackLayout>
 </Page>

@@ -1,0 +1,15 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <Page.actionBar>
+    <ActionBar title="Add Item"></ActionBar>
+  </Page.actionBar>
+  <StackLayout cssClass="demo-page-content">
+    <Label text="Please add a new item to the collection." textWrap="true" cssClass="spaceBottom" />
+
+    <TextField text="{{ Title }}" cssClass="spaceBottom" hint="Enter a title"/>
+
+    <TextView text="{{ Description }}" cssClass="spaceBottom" hint="Enter a description"/>
+
+    <Button text="Add Item" tap="addItem"/>
+     
+  </StackLayout>
+</Page>

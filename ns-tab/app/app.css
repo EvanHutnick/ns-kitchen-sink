@@ -16,6 +16,17 @@
     color: #3c3c3c;
 }
 
+.sub-title {
+    margin: 0 0 10 0;
+    font-size: 24;
+    color: #3c3c3c;
+}
+
+.header {
+    font-size: 20;
+    font-weight: bold;
+}
+
 Page {
     background-color: #FFFFFF;
 }

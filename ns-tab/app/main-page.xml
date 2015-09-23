@@ -3,28 +3,26 @@
     <TabView.items>
       <TabViewItem title="Widgets">
         <TabViewItem.view>
-          <ScrollView>
-            <StackLayout cssClass="tab-content">
-              <Label text="Here you can browse through different widgets to see what type of functionality they have and examples of interacting with them." textWrap="true"/>
-              <Button tap="buttonTap" text="Buttons" />
-              <Button tap="actionBarTap" text="Action Bar"/>
-              <Button tap="dialogsTap" text="Dialogs"/>
-              <Button tap="htmlTap" text="HTML"/>
-              <Button tap="imageTap" text="Images"/>
-              <Button tap="inputsTap" text="Inputs"/>
-              <Button tap="listpickerTap" text="List Picker/SearchBar"/>
-              <Button tap="listviewTap" text="ListView"/>
-              <Button tap="progressTap" text="Progress/Slider"/>
-              <Button tap="repeaterTap" text="Repeater"/>
-            </StackLayout>
-          </ScrollView>
+          <GridLayout cssClass="demo-page-content" rows="auto, *">
+            <Label text="Here you can browse through different widgets to see what type of functionality they have and examples of interacting with them." textWrap="true"/>
+            <ListView items="{{ widgets }}" itemTap="listItemTap" cssClass="spaceTop" row="1">
+              <ListView.itemTemplate>
+                <Label text="{{ display }}" cssClass="listItem"/>
+              </ListView.itemTemplate>
+            </ListView>
+          </GridLayout>
         </TabViewItem.view>
       </TabViewItem>
       <TabViewItem title="Framework">
         <TabViewItem.view>
-          <StackLayout cssClass="tab-content">
+          <GridLayout cssClass="demo-page-content" rows="auto, *">
             <Label text="Here you see more framework-related functionality, like data access, for example." textWrap="true"/>
-          </StackLayout>
+            <ListView items="{{ framework }}" itemTap="listItemTap" cssClass="spaceTop" row="1">
+              <ListView.itemTemplate>
+                <Label text="{{ display }}" cssClass="listItem"/>
+              </ListView.itemTemplate>
+            </ListView>
+          </GridLayout>
         </TabViewItem.view>
       </TabViewItem>
     </TabView.items>

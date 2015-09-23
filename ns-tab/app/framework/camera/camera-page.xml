@@ -1,0 +1,14 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <ScrollView>
+    <StackLayout cssClass="demo-page-content">
+      <Label text="Use the button below to access the device camera and take a picture. " textWrap="true" cssClass="spaceBottom" />
+      <Button tap="takePicture" text="Smile!" cssClass="spaceBottom"/>
+      <Image src="{{ savedImage }}" />
+      <Label text="Once our picture above is saved, the options below will open up to save it to the file system." textWrap="true" cssClass="spaceTop" />
+      <Button isEnabled="{{ hasTakenPicture }}" text="Save Picture" tap="savePicture" cssClass="spaceTop" />
+      <Label text="Enter a file name to save/load from, but remember the name you use so you can save/load multiple images!" textWrap="true" cssClass="spaceTop"/>
+      <TextField text="{{ imageName }}" hint="Image name to save or load..."/>
+      <Button text="Load Previous Picture" tap="loadPicture" cssClass="spaceTop" />
+    </StackLayout>
+  </ScrollView>
+</Page>

@@ -3,3 +3,5 @@ var observable = require("data/observable");            // observable, because v
 exports.dialogsViewModel = new observable.Observable();
 exports.dialogsViewModel.set("confirmChoice", undefined);       // set a value we can bind to
 exports.dialogsViewModel.set("actionChoice", "(none selected)");           // for activity indicator
+exports.dialogsViewModel.set("promptResult", "");
+exports.dialogsViewModel.set("loginResult", "");

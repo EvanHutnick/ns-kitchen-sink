@@ -1,0 +1,21 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <Page.actionBar>
+    <ActionBar>
+      <ActionBar.actionItems>
+        <ActionItem text="Add" tap="addItem"/>
+      </ActionBar.actionItems>
+    </ActionBar>
+  </Page.actionBar>
+  <GridLayout rows="auto, *" cssClass="demo-page-content">
+    <Label text="Below is data that we are retrieving from a Telerik Platform Backend Services instance." textWrap="true" cssClass="spaceBottom" />
+      
+    <ListView items="{{ demoItems }}" row="1">
+      <ListView.itemTemplate>
+        <StackLayout orientation="vertical">
+          <Label text="{{ Title }}" cssClass="header"/>
+          <Label text="{{ Description }}" textWrap="true" />
+        </StackLayout>
+      </ListView.itemTemplate>
+    </ListView>
+  </GridLayout>
+</Page>

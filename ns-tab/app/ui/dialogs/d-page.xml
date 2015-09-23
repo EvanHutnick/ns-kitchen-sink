@@ -1,6 +1,6 @@
 <Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
-  <StackLayout cssClass="spaceSides">
-    <Button text="Action" tap="tapAction" cssClass="spaceTop" />
+  <StackLayout cssClass="demo-page-content">
+    <Button text="Action" tap="tapAction"/>
     <StackLayout orientation="horizontal" cssClass="spaceBottom">
       <Label text="Action choice: " />
       <!-- ^^ is a plain label, nothing fancy, but organized in a horizontal stackpanel so they appear next to one another -->
@@ -14,7 +14,16 @@
     </StackLayout>
     <Button text="Alert" tap="tapAlert" />
     <Button text="Login" tap="tapLogin" />
+    <StackLayout orientation="horizontal" cssClass="spaceBottom">
+      <Label text="Login result: " />
+      <Label text="{{ loginResult }}"/>
+    </StackLayout>
     <Button text="Prompt" tap="tapPrompt" />
+    <StackLayout orientation="horizontal" cssClass="spaceBottom">
+      <Label text="Prompt result: " />
+      <Label text="{{ promptResult }}"/>
+    </StackLayout>
 
   </StackLayout>
 </Page>
+

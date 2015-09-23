@@ -1,6 +1,6 @@
 <Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
-  <StackLayout cssClass="spaceSides">
-    <Label text="Below is a ListPicker widget for selecting items." textWrap="true" cssClass="spaceTop" />
+  <StackLayout cssClass="demo-page-content">
+    <Label text="Below is a ListPicker widget for selecting items." textWrap="true" />
     <Label text="You can select items by index.  The button below will move the picker to item index 3 (0-based, so it is correct that it will go to Fourth)." textWrap="true" cssClass="spaceTop"/>
     <Button tap="pickFour" text="Select Fourth Item" />
     <Label text="Below is a SearchBar widget, type and search for a contains-style search of ListPicker items." textWrap="true" cssClass="spaceTop"/>

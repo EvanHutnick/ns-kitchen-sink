@@ -1,0 +1,12 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <ScrollView>
+    <StackLayout cssClass="demo-page-content">
+      <Label text="Below are a few different ways that we can retrieve data in our application, but not specifically working with a Backend Services Cloud Data instance (think requests/responses)." textWrap="true" cssClass="spaceBottom" />
+      <Label text="Simple Response" cssClass="sub-title"/>
+      <TextField text="{{ sendText }}" hint="Enter text..." />
+      <Button tap="simpleResponse" text="String response" />
+      <Button tap="jsonResponse" text="JSON object" />
+
+    </StackLayout>
+  </ScrollView>
+</Page>

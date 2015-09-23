@@ -1,10 +1,19 @@
 <Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
-  <GridLayout rows="auto, auto, *" cssClass="spaceSides">
-    <StackLayout orientation="vertical" row="0">
-      <Label text="Enter HTML string: "/>
-      <TextField editable="true" hint="Enter some html code..." text="{{ newHtml }}" />
-    </StackLayout>
-    <Button text="Convert" tap="convertTap" row="1"/>
-    <HtmlView html="{{ html }}" row="2"/>
-  </GridLayout>
+  <ScrollView>
+    <GridLayout rows="auto, auto, 200, auto, auto, 300" cssClass="demo-page-content">
+      <StackLayout orientation="vertical" row="0">
+        <Label text="Enter HTML string for HtmlView: "/>
+        <TextView hint="Enter some html code..." text="{{ newHtml }}" />
+      </StackLayout>
+      <Button text="Convert" tap="convertTap" row="1"/>
+      <HtmlView html="{{ html }}" row="2"/>
+      <StackLayout orientation="vertical" row="3">
+        <Label text="Enter a URL for WebView:"/>
+        <TextView hint="Enter a url..." text="{{ newUrl }}" keyboardType="url"/>
+      </StackLayout>
+      <Button text="Go!" tap="urlGo" row="4"/>
+      <WebView url="{{ webSrc }}" loadFinished="webFinished" row="5"/>
+    </GridLayout>
+  </ScrollView>
 </Page>
+

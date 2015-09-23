@@ -1,0 +1,14 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <ScrollView>
+    <StackLayout cssClass="demo-page-content">
+      <Label text="Since we are using devices with a built-in GPS, we can take advantage of location service on-device." textWrap="true" cssClass="spaceBottom" />
+
+      <Button tap="getLocation" isEnabled="{{ isAvailable }}" text="{{ locationButtonText }}" cssClass="spaceBottom" />
+
+      <Label text="Latitude:" cssClass="sub-title" />
+      <Label text="{{ latitude }}"/>
+      <Label text="Longitude:" cssClass="sub-title"/>
+      <Label text="{{ longitude }}"/>
+    </StackLayout>
+  </ScrollView>
+</Page>

@@ -1,6 +1,6 @@
 <Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
   <ScrollView>
-    <StackLayout cssClass="spaceSides">
+    <StackLayout cssClass="demo-page-content">
       <Label text="Repeater with WrapLayout and no defined size:"/>
       <Repeater items="{{ repeaterItems }}" cssClass="spaceBottom">
         <Repeater.itemsLayout>

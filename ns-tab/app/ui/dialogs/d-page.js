@@ -84,6 +84,11 @@ function tapLogin(args) {
     dialogs.login(options).then(function (loginResult) {
         console.log("Login Result:");
         console.log(JSON.stringify(loginResult));
+        if (loginResult.result) {
+            vm.dialogsViewModel.set("loginResult", "Logging in (u: " + loginResult.userName + " / p: " + loginResult.password + ")");
+        } else {
+            vm.dialogsViewModel.set("loginResult", "Cancelled");
+        }
     });
 }
 exports.tapLogin = tapLogin;
@@ -100,6 +105,11 @@ function tapPrompt(args) {
     dialogs.prompt(options).then(function (result) {
         console.log("Prompt Result:")
         console.log(JSON.stringify(result));
+        if (result.result) {
+            vm.dialogsViewModel.set("promptResult", result.text);
+        } else {
+            vm.dialogsViewModel.set("promptResult", result.result + " (means cancelled)");
+        }
     });
 }
 exports.tapPrompt = tapPrompt;

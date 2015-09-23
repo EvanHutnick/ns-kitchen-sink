@@ -11,14 +11,14 @@ var VmItem = (function () {
 
 var items = [];
 for (var i = 0; i < 10; i++) {
-    items.push(new VmItem("Title " + i, "This title "))
+    items.push(new VmItem("Original item #" + i, "Details for our original item #" + i));
 }
 
 var lItems = new observableArray.ObservableArray(items);
 
 // add one item to array
 var addItem = function (title, detail) {
-    var aL = lItems.length + 1;
+    var aL = lItems.length;
     var nT = title + " " + aL;
     lItems.push(new VmItem(nT, detail));
 }
